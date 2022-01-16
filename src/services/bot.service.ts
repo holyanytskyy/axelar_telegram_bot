@@ -1,6 +1,5 @@
 import fs from 'fs';
 import { Markup, Telegraf } from 'telegraf';
-import telegram from 'telegraf/typings/telegram';
 
 import { logger } from '../config/logger.config';
 
