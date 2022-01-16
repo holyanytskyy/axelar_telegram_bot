@@ -33,7 +33,9 @@ export class BotService {
 			ctx.replyWithHTML('https://axelar.network/wp-content/uploads/2021/07/axelar_whitepaper.pdf'),
 		);
 		this.bot.hears('👨‍💻 Careers', (ctx) => ctx.replyWithHTML('https://axelar.network/careers'));
+
 		this.bot.hears('👨‍💼 Backers', (ctx) => ctx.replyWithPhoto({ source: fs.createReadStream('photo/backers.png') }));
+
 		this.bot.hears('😎 Team', (ctx) => ctx.replyWithHTML('https://axelar.network/team'));
 
 		this.bot.hears('🇺🇦 Axelar Chat', (ctx) => ctx.replyWithHTML('https://t.me/axelar_ro_ua'));
